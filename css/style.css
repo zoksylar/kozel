@@ -95,7 +95,7 @@ ul, li, a {
 .welcome {
   width: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: url(/img/main_foto.png);
+  background-image: url(../img/main_foto.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
