@@ -1,0 +1,1301 @@
+/* Fix for black strips at top and bottom */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+    border: none !important;
+    outline: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #fff !important;
+    font-family: 'Raleway', Arial, sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.6 !important;
+    color: #111 !important;
+}
+
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+    border: none !important;
+    outline: none !important;
+    background-color: #fff !important;
+}
+
+/* Remove all borders from header and footer */
+.header, 
+.header__bg,
+.header__inner,
+.footer,
+.main-nav,
+.contacts,
+.container,
+.nav,
+.breadcrumbs,
+.content,
+.section,
+header,
+footer,
+main,
+nav {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+}
+
+/* Remove all margins from header and footer */
+.header {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: transparent !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    overflow-x: hidden !important;
+    background: none !important;
+    background-image: none !important;
+}
+
+/* Footer styles */
+.footer {
+    background: linear-gradient(0deg, #666 0%, #000 47.46%) !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 40px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.footer__container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__menu-link {
+    color: #fff !important;
+    text-decoration: none;
+    font-family: 'Raleway', Arial, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 120% !important;
+    text-transform: uppercase !important;
+}
+
+.footer__social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff !important;
+    text-decoration: none;
+    font-family: 'Raleway', Arial, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 120% !important;
+}
+
+.footer__contact-text {
+    color: #fff !important;
+    font-family: 'Raleway', Arial, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 120% !important;
+}
+
+/* Fix for header background on main page */
+.header__bg {
+    background-image: url('../img/main_foto.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Ensure full-width elements don't create horizontal scrollbars */
+.line {
+    background: #000 !important;
+    width: 100% !important;
+    height: 100px !important;
+    min-height: 100px !important;
+    max-height: 100px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 40px !important;
+    margin: 40px 0 40px 0 !important;
+    box-sizing: border-box !important;
+}
+
+.line__here {
+    display: flex !important;
+    align-items: center !important;
+    gap: 40px !important;
+    height: 100% !important;
+}
+
+.line__catalog {
+    color: #fff !important;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.line__brand {
+    color: transparent !important;
+    font-size: 28px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    letter-spacing: 1px;
+}
+
+.line__here img {
+    height: 150px !important;
+    width: auto !important;
+    display: block;
+}
+
+.line__here img.icon-svg {
+    width: 150px !important;
+    height: 150px !important;
+    min-width: 150px !important;
+    min-height: 150px !important;
+    max-width: 150px !important;
+    max-height: 150px !important;
+    display: block;
+}
+
+/* Remove any potential body background color or before/after elements */
+body:before, 
+body:after,
+html:before,
+html:after,
+.header:before,
+.header:after,
+.footer:before,
+.footer:after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Adjust content to avoid extra spacing */
+.content {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Fix for specific page headers */
+.header .container {
+    background-color: transparent !important;
+    border: none !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Force transparent background on header elements */
+.header__inner {
+    background-color: transparent !important;
+}
+
+/* Fix for the main-nav which could have borders */
+.main-nav {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+/* Make header menu items visible */
+.header__menu-list {
+    display: flex !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu-item {
+    margin: 0 15px;
+}
+
+.header__menu-link {
+    color: #000 !important;
+    text-shadow: none !important;
+}
+
+/* Full width header for tovar_2.html */
+.header {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    overflow-x: hidden !important;
+    background: none !important;
+}
+.header .container {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Улучшенные стили для мобильного меню */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.98);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(10px);
+}
+
+.mobile-menu.active {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu-link {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin: 1.2rem 0;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.mobile-menu-link:hover {
+  color: #ffb300;
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Улучшенная бургер-кнопка */
+.burger-button {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.burger-button:hover {
+  background: transparent;
+}
+
+.burger-button span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  position: relative;
+  transform-origin: center;
+}
+
+.burger-button.active span:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+  width: 28px;
+}
+
+.burger-button.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.burger-button.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  width: 28px;
+}
+
+/* Анимация при наведении */
+.burger-button:hover span:nth-child(1) {
+  width: 28px;
+  transform: translateX(2px);
+}
+
+.burger-button:hover span:nth-child(2) {
+  width: 20px;
+  transform: translateX(4px);
+}
+
+.burger-button:hover span:nth-child(3) {
+  width: 28px;
+  transform: translateX(2px);
+}
+
+/* Анимация при активном состоянии и наведении */
+.burger-button.active:hover span:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+  width: 28px;
+}
+
+.burger-button.active:hover span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.burger-button.active:hover span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+  width: 28px;
+}
+
+/* Прилипающая кнопка закрытия */
+.mobile-menu-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.mobile-menu-close::before,
+.mobile-menu-close::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-close::before {
+  transform: rotate(45deg);
+}
+
+.mobile-menu-close::after {
+  transform: rotate(-45deg);
+}
+
+.mobile-menu-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.mobile-menu.active .mobile-menu-close {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-close {
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .mobile-menu-close::before,
+  .mobile-menu-close::after {
+    width: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile-menu-close {
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .mobile-menu-close::before,
+  .mobile-menu-close::after {
+    width: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .mobile-menu-close {
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .mobile-menu-close::before,
+  .mobile-menu-close::after {
+    width: 14px;
+  }
+}
+
+/* Улучшенная адаптивность для мобильных устройств */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px !important;
+  }
+  
+  .list {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+  }
+  
+  .product-container {
+    gap: 30px !important;
+  }
+  
+  .footer__main {
+    gap: 30px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .burger-button {
+    display: flex !important;
+  }
+  
+  .header__menu {
+    display: none !important;
+  }
+  
+  .header__inner {
+    padding: 15px 0 !important;
+  }
+  
+  .header__logo img {
+    width: 130px !important;
+    height: auto !important;
+  }
+  
+  .contact {
+    gap: 20px !important;
+  }
+  
+  .contact img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  
+  .mobile-menu-link {
+    font-size: 1.8rem !important;
+    margin: 1.2rem 0 !important;
+  }
+  
+  .list {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+    padding: 25px 0 !important;
+  }
+  
+  .card img {
+    height: 350px !important;
+  }
+  
+  .product-container {
+    flex-direction: column !important;
+    padding: 20px !important;
+  }
+  
+  .product-gallery {
+    width: 100% !important;
+  }
+  
+  .main-image img {
+    width: 100% !important;
+    height: 350px !important;
+  }
+  
+  .footer__main {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .footer__menu {
+    align-items: center !important;
+  }
+  
+  .footer__social {
+    justify-content: center !important;
+  }
+  
+  .footer__contacts {
+    align-items: center !important;
+  }
+  
+  .product-info h1 {
+    font-size: 2rem !important;
+  }
+  
+  .price {
+    font-size: 1.4rem !important;
+  }
+  
+  .description p {
+    font-size: 1.1rem !important;
+  }
+  
+  .size-selector {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  
+  .size-option {
+    font-size: 1rem !important;
+    padding: 8px 16px !important;
+  }
+  
+  .add-to-cart {
+    width: 100% !important;
+    padding: 14px 28px !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .footer__menu-link,
+  .footer__contact-text {
+    font-size: 1.3rem !important;
+  }
+  
+  .footer__social {
+    gap: 20px !important;
+  }
+  
+  .footer__social-link img {
+    width: 130px !important;
+    height: 130px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__inner {
+    padding: 15px 0 !important;
+  }
+  
+  .header__logo img {
+    width: 130px !important;
+    height: auto !important;
+  }
+  
+  .contact {
+    gap: 20px !important;
+  }
+  
+  .contact img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  
+  .list {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+    padding: 25px 0 !important;
+  }
+  
+  .card img {
+    height: 350px !important;
+  }
+  
+  .product-container {
+    flex-direction: column !important;
+    padding: 20px !important;
+  }
+  
+  .product-gallery {
+    width: 100% !important;
+  }
+  
+  .main-image img {
+    width: 100% !important;
+    height: 350px !important;
+  }
+  
+  .footer__main {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .footer__menu {
+    align-items: center !important;
+  }
+  
+  .footer__social {
+    justify-content: center !important;
+  }
+  
+  .footer__contacts {
+    align-items: center !important;
+  }
+  
+  .product-info h1 {
+    font-size: 2rem !important;
+  }
+  
+  .price {
+    font-size: 1.4rem !important;
+  }
+  
+  .description p {
+    font-size: 1.1rem !important;
+  }
+  
+  .size-selector {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  
+  .size-option {
+    font-size: 1rem !important;
+    padding: 8px 16px !important;
+  }
+  
+  .add-to-cart {
+    width: 100% !important;
+    padding: 14px 28px !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .footer__menu-link,
+  .footer__contact-text {
+    font-size: 1.3rem !important;
+  }
+  
+  .footer__social {
+    gap: 20px !important;
+  }
+  
+  .footer__social-link img {
+    width: 130px !important;
+    height: 130px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__inner {
+    padding: 12px 0 !important;
+  }
+  
+  .header__logo img {
+    width: 110px !important;
+  }
+  
+  .contact {
+    gap: 15px !important;
+  }
+  
+  .contact img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  
+  .burger-button {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  .burger-button span {
+    width: 20px !important;
+    margin: 4px 0 !important;
+  }
+  
+  .mobile-menu-link {
+    font-size: 1.5rem !important;
+    margin: 1rem 0 !important;
+  }
+  
+  .list {
+    gap: 20px !important;
+    padding: 20px 0 !important;
+  }
+  
+  .card img {
+    height: 300px !important;
+  }
+  
+  .product-container {
+    padding: 15px !important;
+  }
+  
+  .main-image img {
+    height: 300px !important;
+  }
+  
+  .product-info h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .price {
+    font-size: 1.3rem !important;
+  }
+  
+  .description p {
+    font-size: 1rem !important;
+  }
+  
+  .size-selector {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  
+  .size-option {
+    font-size: 0.9rem !important;
+    padding: 6px 14px !important;
+  }
+  
+  .add-to-cart {
+    width: 100% !important;
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+  }
+  
+  .footer__menu-link,
+  .footer__contact-text {
+    font-size: 1.2rem !important;
+  }
+  
+  .footer__social {
+    gap: 15px !important;
+  }
+  
+  .footer__social-link img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__logo img {
+    width: 100px !important;
+  }
+  
+  .contact {
+    gap: 12px !important;
+  }
+  
+  .contact img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+  .burger-button {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .burger-button span {
+    width: 18px !important;
+    margin: 3px 0 !important;
+  }
+  
+  .mobile-menu-link {
+    font-size: 1.3rem !important;
+    margin: 0.8rem 0 !important;
+  }
+  
+  .list {
+    gap: 15px !important;
+    padding: 15px 0 !important;
+  }
+  
+  .card img {
+    height: 250px !important;
+  }
+  
+  .product-container {
+    padding: 10px !important;
+  }
+  
+  .main-image img {
+    height: 250px !important;
+  }
+  
+  .product-info h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .price {
+    font-size: 1.2rem !important;
+  }
+  
+  .description p {
+    font-size: 0.9rem !important;
+  }
+  
+  .size-option {
+    font-size: 0.8rem !important;
+    padding: 5px 12px !important;
+  }
+  
+  .add-to-cart {
+    padding: 10px 20px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .footer__menu-link,
+  .footer__contact-text {
+    font-size: 1.1rem !important;
+  }
+  
+  .footer__social-link img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
+/* Исправление для предотвращения прокрутки при открытом меню */
+body.menu-open {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+}
+
+/* Исправление размеров изображений и видимости текста (откат) */
+.card img, .info__img, .main-image img, .product-gallery .main-image img {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.info__description, .product-info .description, .main-content, .content, p, span, h1, h2, h3, h4, h5, h6 {
+    color: #111 !important;
+    font-family: 'Raleway', Arial, sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    text-align: left !important;
+}
+
+/* Белый текст в шапке */
+.header, .header *, .main-nav, .main-nav * {
+    color: #fff !important;
+    text-shadow: 0 1px 8px #0008;
+}
+
+.welcome {
+    background-image: none !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0.86) 0%, rgba(0,0,0,0) 100%) !important;
+}
+
+.line, .line *, .line__here, .line__here2, .line__here *, .line__here2 * {
+    color: #fff !important;
+}
+
+.list {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 40px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 40px 0 !important;
+}
+
+.card {
+    position: relative !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    background: #181818 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+.card img {
+    width: 100% !important;
+    height: 400px !important;
+    object-fit: cover !important;
+    transition: transform 0.5s ease !important;
+}
+
+.card:hover img {
+    transform: scale(1.05) !important;
+}
+
+.card .product-info {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 20px !important;
+    color: #fff !important;
+    z-index: 1 !important;
+    background: none !important;
+}
+
+.card .product-title {
+    font-family: 'Raleway', Arial, sans-serif !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 8px !important;
+    text-transform: uppercase !important;
+    text-shadow: 2px 2px 10px rgba(0,0,0,1) !important;
+}
+
+.card .product-price {
+    font-family: 'Raleway', Arial, sans-serif !important;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 10px rgba(0,0,0,1) !important;
+    background: none !important;
+    -webkit-text-fill-color: #fff !important;
+    text-fill-color: #fff !important;
+}
+
+@media (max-width: 1200px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 20px 0 !important;
+    }
+    
+    .card img {
+        height: 300px !important;
+    }
+}
+
+/* --- Красивый товарный блок --- */
+.product-container {
+    background: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+.product-gallery {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-image-container {
+    background: #222;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.12);
+    margin-bottom: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2);
+}
+
+.product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-image-container:hover img {
+    transform: scale(1.05);
+}
+
+.main-image img {
+    width: 340px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.main-image img:hover {
+    transform: scale(1.05);
+}
+.product-info {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: #fff;
+}
+.product-info h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffb300;
+    margin-bottom: 12px;
+}
+.description p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.size-selector {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.size-option {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.size-option:hover, .size-option.active {
+    background: #ffb300;
+    color: #181818;
+}
+.size-selector .size-option.selected,
+.size-option.selected {
+    background: #fff !important;
+    color: #181818 !important;
+    border: 2px solid #ffb300 !important;
+    font-weight: 700 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10) !important;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.product-actions {
+    margin-top: 10px;
+}
+.add-to-cart {
+    background: linear-gradient(90deg, #ffb300 0%, #ff6f00 100%);
+    color: #181818;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 36px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 rgba(255,183,0,0.12);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.add-to-cart:hover {
+    background: linear-gradient(90deg, #ff6f00 0%, #ffb300 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+
+/* --- Красивые хлебные крошки --- */
+.breadcrumbs.container {
+    background: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+    font-size: 1rem;
+    color: #bbb;
+    gap: 10px;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+}
+.breadcrumbs.container ol {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+}
+.breadcrumbs.container li {
+    display: flex !important;
+    align-items: center !important;
+    font-size: 1rem !important;
+    color: #bbb !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.breadcrumbs.container li:not(:last-child)::after {
+    content: '/';
+    margin: 0 8px;
+    color: #bbb;
+}
+
+/* --- Красивые отзывы --- */
+.reviews-section {
+    margin-top: 48px;
+}
+.reviews-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.review {
+    background: #222;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+    padding: 18px 22px;
+    min-width: 260px;
+    max-width: 340px;
+    color: #fff;
+    flex: 1 1 260px;
+}
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.review-author-image {
+    background: #ffb300;
+    color: #181818;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.review-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.review-author {
+    font-weight: 600;
+    color: #fff;
+}
+.review-date {
+    color: #bbb;
+    font-size: 0.9rem;
+}
+.review-rating {
+    color: #ffb300;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+.review-content p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .product-container {
+        flex-direction: column;
+        padding: 24px;
+    }
+    .reviews-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+@media (max-width: 600px) {
+    .product-container {
+        padding: 10px;
+    }
+    .main-image img {
+        width: 100%;
+        height: 220px;
+    }
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p, span, a, li, button, input, textarea, div {
+    font-family: 'Raleway', Arial, sans-serif !important;
+} 
