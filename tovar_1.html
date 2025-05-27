@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru" style="margin: 0; padding: 0; border: none; overflow-x: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="футболка GET RICH - GET RICH">
+    <title>футболка GET RICH - GET RICH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fix.css">
+    <script src="js/cart.js"></script>
+    <!-- Подключение шрифтов -->
+    <style>
+        @font-face {
+            font-family: "Raleway";
+            src: url("fonts/Raleway-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Raleway";
+            src: url("fonts/Raleway-Medium.woff2") format("woff2");
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Raleway";
+            src: url("fonts/Raleway-Bold.woff2") format("woff2");
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+    <!-- Подключение XML данных -->
+    <link rel="alternate" type="application/xml" href="data/products.xml">
+</head>
+<body style="margin: 0; padding: 0; border: none; overflow-x: hidden;">
+    <!-- Шапка сайта -->
+    <header class="header" style="background: #000 !important; margin: 0; padding: 0; width: 100vw; max-width: 100vw; box-sizing: border-box;">
+        <div class="container" style="max-width: 1296px; margin: 0 auto; padding: 0 16px;">
+            <div class="header__inner" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+                <a href="main.html" class="header__logo logo" style="width: 160px;">
+                    <img src="/img/GET RICH_logo.svg" alt="GET RICH логотип" width="160" height="40" loading="lazy">
+                </a>
+                
+                <nav class="header__menu" style="flex: 1; display: flex; justify-content: center;">
+                    <ul class="header__menu-list" style="display: flex; gap: 32px; align-items: center; list-style: none; margin: 0; padding: 0;">
+                        <li class="header__menu-item"><a class="header__menu-link" href="main.html#catalog" style="color: #fff; text-decoration: none; font-size: 18px;">КАТАЛОГ</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="aboutUs.html" style="color: #fff; text-decoration: none; font-size: 18px;">О НАС</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="main.html#oplata-dostavka" style="color: #fff; text-decoration: none; font-size: 18px;">ДОСТАВКА</a></li>
+                    </ul>            
+                </nav>
+
+                <div class="contact">
+                    <a href="#"><img src="/img/facebook_logo.svg" alt="Facebook" class="icon-svg"></a>
+                    <a href="#"><img src="/img/Instagram_logo.svg" alt="Instagram" class="icon-svg"></a>
+                    <a href="cart.html"><img src="/img/korzina_logo.svg" alt="Корзина" class="icon-svg"></a>
+                </div>
+
+                <button class="burger-button visible-mobile" type="button" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <div class="product-container">
+            <!-- Галерея изображений -->
+            <div class="product-gallery" style="width: 100%; display: flex; justify-content: center; margin-bottom: 0;">
+                <div class="product-image-container" style="width: auto; max-width: 100%; position: relative; margin-bottom: 0;">
+                    <img src="fotos/photo_1.png" alt="футболка GET RICH - основное фото" itemprop="image" style="width: 700px; height: 700px; object-fit: cover; display: block; margin-bottom: 0;">
+                </div>
+            </div>
+
+        <!-- Информация о товаре -->
+            <div class="product-info" data-product-id="1">
+                <h1 itemprop="name">футболка GET RICH</h1>
+                <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">60</span>
+                    <span itemprop="priceCurrency">руб</span>
+                </div>
+            
+                <div class="description" itemprop="description">
+                    <p>Стильная футболка с логотипом GET RICH — идеальное дополнение к вашему образу в стиле уличной моды</p>
+                    <p>100% хлопок, удобный крой, доступны разные размеры</p>
+            </div>
+
+            <!-- Выбор размера -->
+                <div class="size-selector" role="group" aria-label="Выбор размера" style="display: flex; gap: 12px; margin: 16px 0;">
+                    <button class="size-option" style="background: #000; color: #fff; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; min-width: 40px;">S</button>
+                    <button class="size-option" style="background: #000; color: #fff; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; min-width: 40px;">M</button>
+                    <button class="size-option" style="background: #000; color: #fff; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; min-width: 40px;">L</button>
+                    <button class="size-option" style="background: #000; color: #fff; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; min-width: 40px;">XL</button>
+                </div>
+
+                <div class="product-actions">
+                    <button class="add-to-cart" aria-label="Добавить в корзину" style="background: #000; color: #fff; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 1.1em; width: 100%;">В КОРЗИНУ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Секция отзывов -->
+    <section class="reviews-section" style="margin: 32px 0; padding: 0; width: 100%; max-width: 100vw; box-sizing: border-box;">
+        <div style="width: 100%; max-width: 1296px; margin: 0 auto; padding: 0 16px; box-sizing: border-box;">
+            <h2 style="color: #000; font-size: 2.5rem; margin-bottom: 32px; text-align: center; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">
+                <span style="background: linear-gradient(90deg, #000 0%, #333 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: block; margin: 0 auto;">Отзывы покупателей</span>
+            </h2>
+            
+            <!-- Контейнер для отзывов -->
+            <div style="display: flex; flex-wrap: wrap; gap: 24px; padding: 16px 0; width: 100%; margin: 0 auto; justify-content: center;">
+                <!-- Отзыв 1 -->
+                <div class="review" style="background: #f5f5f5; color: #333; border-radius: 16px; padding: 24px; width: 32%; min-width: 260px; position: relative; box-sizing: border-box;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-weight: 600; font-size: 1.2em; margin-bottom: 4px;">Алексей Котов</div>
+                            <div style="color: #FFD700; margin-bottom: 8px;">★★★★★</div>
+                        </div>
+                        <div style="color: #666; font-size: 0.9em;">15.05.2023</div>
+                    </div>
+                    <div style="color: #666; font-size: 0.9em; margin-bottom: 12px;">
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px; margin-right: 8px;">Размер: M</span>
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">Цвет: Черный</span>
+                    </div>
+                    <div style="margin-bottom: 16px; line-height: 1.6; font-size: 1.1em; color: #333;">
+                        Очень стильная футболка, материал приятный к телу. Размер соответствует указанному. Рекомендую! Качество ткани отличное, принт держится хорошо даже после нескольких стирок.
+                    </div>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="review" style="background: #f5f5f5; color: #333; border-radius: 16px; padding: 24px; width: 32%; min-width: 260px; position: relative; box-sizing: border-box;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-weight: 600; font-size: 1.2em; margin-bottom: 4px;">Ирина Смирнова</div>
+                            <div style="color: #FFD700; margin-bottom: 8px;">★★★★☆</div>
+                        </div>
+                        <div style="color: #666; font-size: 0.9em;">02.05.2023</div>
+                    </div>
+                    <div style="color: #666; font-size: 0.9em; margin-bottom: 12px;">
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px; margin-right: 8px;">Размер: L</span>
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">Цвет: Белый</span>
+                    </div>
+                    <div style="margin-bottom: 16px; line-height: 1.6; font-size: 1.1em; color: #333;">
+                        Заказывала для парня, он очень доволен. Качество хорошее, принт яркий, после стирки не линяет. Единственное - немного долгая доставка, но это не критично. Размер подошел идеально!
+                    </div>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="review" style="background: #f5f5f5; color: #333; border-radius: 16px; padding: 24px; width: 32%; min-width: 260px; position: relative; box-sizing: border-box;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-weight: 600; font-size: 1.2em; margin-bottom: 4px;">Дмитрий Петров</div>
+                            <div style="color: #FFD700; margin-bottom: 8px;">★★★★★</div>
+                        </div>
+                        <div style="color: #666; font-size: 0.9em;">28.04.2023</div>
+                    </div>
+                    <div style="color: #666; font-size: 0.9em; margin-bottom: 12px;">
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px; margin-right: 8px;">Размер: XL</span>
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">Цвет: Черный</span>
+                    </div>
+                    <div style="margin-bottom: 16px; line-height: 1.6; font-size: 1.1em; color: #333;">
+                        Отличная футболка! Материал качественный, приятный на ощупь. Размер подошел идеально. Принт выглядит даже лучше, чем на фото. Обязательно закажу еще! Доставка быстрая, упаковка аккуратная.
+                    </div>
+                </div>
+
+                <!-- Отзыв 4 -->
+                <div class="review" style="background: #f5f5f5; color: #333; border-radius: 16px; padding: 24px; width: 32%; min-width: 260px; position: relative; box-sizing: border-box;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-weight: 600; font-size: 1.2em; margin-bottom: 4px;">Анна Иванова</div>
+                            <div style="color: #FFD700; margin-bottom: 8px;">★★★★★</div>
+                        </div>
+                        <div style="color: #666; font-size: 0.9em;">20.04.2023</div>
+                    </div>
+                    <div style="color: #666; font-size: 0.9em; margin-bottom: 12px;">
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px; margin-right: 8px;">Размер: S</span>
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">Цвет: Белый</span>
+                    </div>
+                    <div style="margin-bottom: 16px; line-height: 1.6; font-size: 1.1em; color: #333;">
+                        Прекрасная футболка! Качество на высоте, ткань приятная, не мнется. Размер подошел идеально. Принт четкий, яркий. Буду заказывать еще в других цветах!
+                    </div>
+                </div>
+
+                <!-- Отзыв 5 -->
+                <div class="review" style="background: #f5f5f5; color: #333; border-radius: 16px; padding: 24px; width: 32%; min-width: 260px; position: relative; box-sizing: border-box;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-weight: 600; font-size: 1.2em; margin-bottom: 4px;">Максим Соколов</div>
+                            <div style="color: #FFD700; margin-bottom: 8px;">★★★★☆</div>
+                        </div>
+                        <div style="color: #666; font-size: 0.9em;">15.04.2023</div>
+                    </div>
+                    <div style="color: #666; font-size: 0.9em; margin-bottom: 12px;">
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px; margin-right: 8px;">Размер: M</span>
+                        <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">Цвет: Черный</span>
+                    </div>
+                    <div style="margin-bottom: 16px; line-height: 1.6; font-size: 1.1em; color: #333;">
+                        Хорошая футболка за свои деньги. Материал качественный, приятный к телу. Размер соответствует указанному. Рекомендую к покупке!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <!-- Левая колонка -->
+                <div class="footer__left">
+                    <a href="/" class="footer__logo">
+                        <img src="img/GET RICH_logo.svg" alt="GET RICH" width="286" height="49">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__menu">
+                            <li><a href="main.html#catalog" class="footer__menu-link">КАТАЛОГ</a></li>
+                            <li><a href="aboutUs.html" class="footer__menu-link">О НАС</a></li>
+                            <li><a href="main.html#oplata-dostavka" class="footer__menu-link">ДОСТАВКА</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Правая колонка -->
+                <div class="footer__right">
+                    <!-- Социальные сети -->
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <img src="img/facebook_logo.svg" alt="Facebook" width="150" height="150" class="icon-svg">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="img/Instagram_logo.svg" alt="Instagram" width="150" height="150" class="icon-svg">
+                        </a>
+                        <a href="cart.html" class="footer__social-link">
+                            <img src="img/korzina_logo.svg" alt="Корзина" width="150" height="150" class="icon-svg">
+                        </a>
+                    </div>
+                    
+                    <!-- Контактная информация -->
+                    <div class="footer__contacts">
+                        <a href="tel:+375447278642" class="footer__contact-item">
+                            <img src="img/telephone.svg" alt="Телефон" class="icon-svg">
+                            <span class="footer__contact-text">+375 (44) 727 86 42</span>
+                        </a>
+                        <a href="mailto:sale@420fourtwoo.by" class="footer__contact-item">
+                            <img src="img/mail.svg" alt="Email" class="icon-svg">
+                            <span class="footer__contact-text">sale@420fourtwoo.by</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- XML данные -->
+    <script id="productData" type="application/xml">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <product>
+            <n>футболка GET RICH</n>
+            <price>60</price>
+            <currency>руб</currency>
+            <description>Стильная футболка с логотипом GET RICH — идеальное дополнение к вашему образу в стиле уличной моды</description>
+            <sizes>
+                <size>S</size>
+                <size>M</size>
+                <size>L</size>
+                <size>XL</size>
+            </sizes>
+            <images>
+                <main>img/photo_1.jpg</main>
+                <thumbnails>
+                    <thumbnail>img/photo_1.jpg</thumbnail>
+                </thumbnails>
+            </images>
+        </product>
+    </script>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Обработчик выбора размера
+            const sizeOptions = document.querySelectorAll('.size-option');
+            sizeOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Убираем выделение у всех размеров
+                    sizeOptions.forEach(opt => opt.classList.remove('selected'));
+                    // Добавляем выделение выбранному размеру
+                    this.classList.add('selected');
+                });
+            });
+
+            // Выбираем размер M по умолчанию
+            const defaultSize = document.querySelector('.size-option:nth-child(2)');
+            if (defaultSize) {
+                defaultSize.classList.add('selected');
+            }
+        });
+    </script>
+    <script src="js/navigation.js"></script>
+    
+    <!-- Скрипт для галереи изображений -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Получаем все миниатюры и основное изображение
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const mainImage = document.querySelector('.main-image img');
+            
+            // Обработчик для каждой миниатюры
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    // Удаляем класс active у всех миниатюр
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    
+                    // Добавляем класс active к выбранной миниатюре
+                    this.classList.add('active');
+                    
+                    // Получаем URL изображения из миниатюры
+                    const imgSrc = this.querySelector('img').getAttribute('src');
+                    
+                    // Обновляем основное изображение
+                    mainImage.setAttribute('src', imgSrc);
+                });
+            });
+            
+            // Кнопка увеличения изображения
+            const zoomBtn = document.querySelector('.zoom-btn');
+            if (zoomBtn) {
+                zoomBtn.addEventListener('click', function() {
+                    // Получаем URL текущего изображения
+                    const currentImgSrc = mainImage.getAttribute('src');
+                    
+                    // Создаем модальное окно
+                    const modal = document.createElement('div');
+                    modal.classList.add('image-modal');
+                    
+                    // Создаем изображение для модального окна
+                    const modalImg = document.createElement('img');
+                    modalImg.setAttribute('src', currentImgSrc);
+                    
+                    // Создаем кнопку закрытия
+                    const closeBtn = document.createElement('button');
+                    closeBtn.classList.add('modal-close');
+                    closeBtn.innerHTML = '&times;';
+                    
+                    // Добавляем элементы в модальное окно
+                    modal.appendChild(modalImg);
+                    modal.appendChild(closeBtn);
+                    
+                    // Добавляем модальное окно в body
+                    document.body.appendChild(modal);
+                    
+                    // Предотвращаем прокрутку страницы
+                    document.body.style.overflow = 'hidden';
+                    
+                    // Обработчик для закрытия модального окна
+                    closeBtn.addEventListener('click', function() {
+                        document.body.removeChild(modal);
+                        document.body.style.overflow = 'auto';
+                    });
+                    
+                    // Закрытие по клику на фон
+                    modal.addEventListener('click', function(event) {
+                        if (event.target === modal) {
+                            document.body.removeChild(modal);
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+    <script src="js/burger.js"></script>
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Закрыть меню"></button>
+        <a href="main.html#catalog" class="mobile-menu-link">КАТАЛОГ</a>
+        <a href="aboutUs.html" class="mobile-menu-link">О НАС</a>
+        <a href="main.html#oplata-dostavka" class="mobile-menu-link">ДОСТАВКА</a>
+    </div>
+</body>
+</html>
