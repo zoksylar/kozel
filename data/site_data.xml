@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <categories>
+        <category id="1" name="Одежда">
+            <products>
+                <product id="1">
+                    <name>футболка GET RICH</name>
+                    <price>60</price>
+                    <currency>руб</currency>
+                    <image>/fotos/photo_1.png</image>
+                    <description>Футболка с фирменным логотипом GET RICH</description>
+                    <link>tovar_1.html</link>
+                    <sizes>
+                        <size>S</size>
+                        <size>M</size>
+                        <size>L</size>
+                        <size>XL</size>
+                    </sizes>
+                </product>
+                <product id="3">
+                    <name>худи GET RICH</name>
+                    <price>90</price>
+                    <currency>руб</currency>
+                    <image>/fotos/photo_3.png</image>
+                    <description>Худи с фирменным дизайном GET RICH</description>
+                    <link>tovar_3.html</link>
+                    <sizes>
+                        <size>S</size>
+                        <size>M</size>
+                        <size>L</size>
+                        <size>XL</size>
+                    </sizes>
+                </product>
+                <product id="5">
+                    <name>брюки GET RICH</name>
+                    <price>80</price>
+                    <currency>руб</currency>
+                    <image>/fotos/photo_5.png</image>
+                    <description>Брюки в стиле уличной моды</description>
+                    <link>tovar_5.html</link>
+                    <sizes>
+                        <size>S</size>
+                        <size>M</size>
+                        <size>L</size>
+                        <size>XL</size>
+                    </sizes>
+                </product>
+            </products>
+        </category>
+        <category id="2" name="Аксессуары">
+            <products>
+                <product id="2">
+                    <name>кепка GET RICH</name>
+                    <price>45</price>
+                    <currency>руb</currency>
+                    <image>/fotos/photo_2.png</image>
+                    <description>Кепка с фирменным логотипом</description>
+                    <link>tovar_2.html</link>
+                </product>
+                <product id="4">
+                    <name>карабин GET RICH</name>
+                    <price>35</price>
+                    <currency>руб</currency>
+                    <image>/fotos/photo_4.png</image>
+                    <description>Стильный карабин для ключей</description>
+                    <link>tovar_4.html</link>
+                </product>
+            </products>
+        </category>
+        <category id="3" name="Обувь">
+            <products>
+                <product id="6">
+                    <name>кроссовки GET RICH</name>
+                    <price>120</price>
+                    <currency>руб</currency>
+                    <image>/fotos/photo_6.png</image>
+                    <description>Кроссовки в стиле уличной моды</description>
+                    <link>tovar_6.html</link>
+                    <sizes>
+                        <size>38</size>
+                        <size>39</size>
+                        <size>40</size>
+                        <size>41</size>
+                        <size>42</size>
+                        <size>43</size>
+                        <size>44</size>
+                    </sizes>
+                </product>
+            </products>
+        </category>
+    </categories>
+    
+    <delivery>
+        <regions>
+            <region name="Минск">
+                <area>МКАД</area>
+                <area>Уручье</area>
+                <price>0</price>
+                <currency>руб</currency>
+            </region>
+        </regions>
+        <payment_methods>
+            <method>Банковской картой</method>
+            <method>Наличными при получении</method>
+        </payment_methods>
+    </delivery>
+    
+    <about>
+        <description>
+            GETRICH — бренд с духом уличной культуры, для людей,
+            которые хотят жить в мире, узнавать разные культуры,
+            быть свободными от предрассудков и носить то,
+            что раскрывает их как личность и отражает
+            их жизненные ценности.
+        </description>
+        <social_media>
+            <network name="Facebook" link="#"/>
+            <network name="Instagram" link="#"/>
+        </social_media>
+    </about>
+</site> 
